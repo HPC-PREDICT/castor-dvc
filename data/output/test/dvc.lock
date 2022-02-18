@@ -14,3 +14,13 @@ stages:
     - path: daint_test_stage_out.txt
       md5: 68b329da9893e34099c7d8ad5cb9c940
       size: 1
+  another_daint_test_stage:
+    cmd: bash -c "echo 'This is another stage on Piz Daint for testing' > another_daint_test_stage_out.txt"
+    deps:
+    - path: daint_test_stage_out.txt
+      md5: 68b329da9893e34099c7d8ad5cb9c940
+      size: 1
+    outs:
+    - path: another_daint_test_stage_out.txt
+      md5: e9bce3b86e0b85d92d383b8e43104910
+      size: 47

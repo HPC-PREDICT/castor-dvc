@@ -9,3 +9,9 @@ stages:
       > daint_test_stage_out.txt
     outs:
     - daint_test_stage_out.txt
+  another_daint_test_stage:
+    cmd: bash -c "echo 'This is another stage on Piz Daint for testing' > another_daint_test_stage_out.txt"
+    deps:
+    - daint_test_stage_out.txt
+    outs:
+    - another_daint_test_stage_out.txt
