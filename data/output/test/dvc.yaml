@@ -1,0 +1,6 @@
+stages:
+  local_test_stage:
+    cmd: bash -c echo "Testing data versioning with object storage from ThinkPad-X1"
+      > local_test_stage_out.txt
+    outs:
+    - local_test_stage_out.txt
