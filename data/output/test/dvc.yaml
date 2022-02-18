@@ -4,3 +4,8 @@ stages:
       > local_test_stage_out.txt
     outs:
     - local_test_stage_out.txt
+  daint_test_stage:
+    cmd: bash -c echo "Testing data versioning with object storage from daint101"
+      > daint_test_stage_out.txt
+    outs:
+    - daint_test_stage_out.txt

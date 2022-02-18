@@ -7,3 +7,10 @@ stages:
     - path: local_test_stage_out.txt
       md5: 68b329da9893e34099c7d8ad5cb9c940
       size: 1
+  daint_test_stage:
+    cmd: bash -c echo "Testing data versioning with object storage from daint101"
+      > daint_test_stage_out.txt
+    outs:
+    - path: daint_test_stage_out.txt
+      md5: 68b329da9893e34099c7d8ad5cb9c940
+      size: 1
