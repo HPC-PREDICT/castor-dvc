@@ -1,6 +1,6 @@
 [core]
     analytics = false
-    remote = pollux
-['remote "pollux"']
-    url = s3://hpc-predict-pollux-test
+    remote = castor
+['remote "castor"']
+    url = s3://hpc-predict-dvc2-test
     endpointurl = https://object.cscs.ch
